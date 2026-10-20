@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Teesha Talreja's Information Technology student portfolio at the University of North Texas.">
+  <title>Teesha Talreja | IT Student Portfolio</title>
+
+  <!-- Bootstrap CSS stored in this repository -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    :root {
+      --navy: #10243a;
+      --blue: #176b87;
+      --pale: #f2f7fa;
+    }
+
+    body {
+      color: #25364a;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .navbar {
+      background: var(--navy);
+    }
+
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #10243a, #176b87);
+      color: white;
+      padding: 90px 0;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .skill-card, .project-card {
+      height: 100%;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: 0 5px 22px rgba(16, 36, 58, .08);
+    }
+
+    .project-card {
+      border-top: 4px solid var(--blue);
+    }
+
+    .btn-portfolio {
+      background: #f2c14e;
+      color: #10243a;
+      font-weight: 700;
+      border: 0;
+    }
+
+    .btn-portfolio:hover {
+      background: #ffda78;
+      color: #10243a;
+    }
+
+    .soft-bg {
+      background: var(--pale);
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 24px 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Teesha Talreja</a>
+
+      <button class="navbar-toggler bg-light" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Welcome section -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="text-uppercase fw-bold mb-2">Welcome to my portfolio</p>
+          <h1 class="display-4 fw-bold">Hello, I'm Teesha Talreja.</h1>
+          <h2 class="h4 mb-4">Information Technology Student at UNT</h2>
+          <p class="lead mb-4">
+            I'm building my knowledge of technology, web development,
+            and problem-solving while exploring how digital tools can
+            make everyday tasks easier.
+          </p>
+          <a class="btn btn-portfolio btn-lg me-2 mb-2" href="#projects">
+            Explore My Projects
+          </a>
+          <a class="btn btn-outline-light btn-lg mb-2" href="#contact">
+            Get in Touch
+          </a>
+        </div>
+
+        <div class="col-lg-5">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=85"
+            alt="Laptop and workspace used for technology and web development">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 text-center">
+          <h2 class="section-title">About Me</h2>
+          <p class="fs-5">
+            I'm Teesha, an Information Technology student at the
+            University of North Texas. I enjoy learning new technical
+            skills, working through challenges, and developing projects
+            that connect technology with real-world needs.
+          </p>
+          <p>
+            This website is part of my Bootstrap and AWS Amplify
+            assignment. It showcases my learning journey and introduces
+            me to building, version-controlling, and deploying a website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section class="section soft-bg" id="skills">
+    <div class="container">
+      <h2 class="section-title text-center">Skills I'm Developing</h2>
+      <p class="text-center mb-5">
+        Technologies and professional skills I'm exploring as an IT student.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card skill-card p-4">
+            <div class="card-body">
+              <h3 class="h5">Web Development</h3>
+              <p class="mb-0">
+                Learning HTML, CSS, responsive layouts, and Bootstrap
+                components to build user-friendly websites.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card skill-card p-4">
+            <div class="card-body">
+              <h3 class="h5">IT &amp; Computing</h3>
+              <p class="mb-0">
+                Developing technical problem-solving skills and learning
+                about computing systems and software tools.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card skill-card p-4">
+            <div class="card-body">
+              <h3 class="h5">Teamwork &amp; Organization</h3>
+              <p class="mb-0">
+                Practicing communication, planning, collaboration, and
+                project organization through coursework.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center">My Projects</h2>
+      <p class="text-center mb-5">
+        A few examples of the work I'm learning to create.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card project-card p-4">
+            <div class="card-body">
+              <span class="badge text-bg-primary mb-3">Web Design</span>
+              <h3 class="h4">CampusConnect</h3>
+              <p>
+                A Figma-based campus event management concept designed
+                to help students discover events, connect with campus
+                organizations, and participate in university activities.
+              </p>
+              <p class="text-secondary small mb-0">
+                Tools: Figma, UI/UX design, prototyping
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card project-card p-4">
+            <div class="card-body">
+              <span class="badge text-bg-primary mb-3">Cloud &amp; Web</span>
+              <h3 class="h4">Personal Portfolio Website</h3>
+              <p>
+                A responsive personal website built with Bootstrap,
+                stored in GitHub, and deployed through AWS Amplify
+                to practice web development and cloud hosting.
+              </p>
+              <p class="text-secondary small mb-0">
+                Tools: HTML, Bootstrap, GitHub, AWS Amplify
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="section soft-bg" id="contact">
+    <div class="container text-center">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="fs-5">
+        Thank you for visiting my portfolio!
+      </p>
+      <p>
+        I'm looking forward to learning, growing, and exploring new
+        opportunities in Information Technology.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#home">Back to Top</a>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Teesha Talreja</p>
+      <p class="mb-0 small">Information Technology Student | University of North Texas</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript stored in this repository -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
